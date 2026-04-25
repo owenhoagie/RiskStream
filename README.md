@@ -7,4 +7,5 @@ However, I still intend to list what I did on 4/26/26 that would of fallen under
 Every other day should function as intended, so here is what I did (in order):
 - Setup initial GitHub for the project
 - Added organizational folders for later setup regarding Maven
-- Created initial classes with attributes and methods as well as JavaDocs
+- Created initial classes with attributes and methods as well as JavaDocs (AccountPosition, RiskAlert, RiskEngine, and TradeEvent)
+- Started on proper Maven project setup
