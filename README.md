@@ -9,3 +9,11 @@ Every other day should function as intended, so here is what I did (in order):
 - Added organizational folders for later setup regarding Maven
 - Created initial classes with attributes and methods as well as JavaDocs (AccountPosition, RiskAlert, RiskEngine, and TradeEvent)
 - Started on proper Maven project setup
+
+Day 2 (4/26/26):
+- Created Maven project structure
+- Added pom.xml
+- Added resources/sample-data folder
+- Added basic Main class for local testing
+- Confirmed Maven build command runs
+- Learned how Maven organizes Java source, tests, and dependencies

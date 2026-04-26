@@ -1,0 +1,5 @@
+accountId,symbol,quantity,price
+ACC1,AAPL,10,25.00
+ACC1,MSFT,5,40.00
+ACC2,GOOG,2,100.00
+ACC3,TSLA,4,75.00
