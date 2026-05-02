@@ -12,6 +12,16 @@ The project was built as a beginner-friendly Apache Flink and Java practice proj
 - JUnit 5
 - CSV sample data
 
+## Author And Contribution Summary
+
+Author: Owen Hoag
+
+This is an individual programming project. I designed the project scope, created the Java/Maven structure, implemented the event models and risk logic, added Apache Flink as a local streaming pipeline, wrote JUnit tests, created sample trade datasets, debugged the build/run commands, and documented how to reproduce the results.
+
+## Video Demonstration
+
+YouTube demo link: 
+
 ## What The Project Does
 
 - Reads synthetic trade records with account ID, symbol, quantity, and price.
@@ -23,7 +33,24 @@ The project was built as a beginner-friendly Apache Flink and Java practice proj
 
 ## Project Structure
 
+This repository keeps the normal Maven layout so the project can build and run without custom Maven configuration. The assignment-required top-level folders are included as navigation folders that explain where each required artifact lives.
+
 ```text
+code/
+  README.md - explains where the Maven source code lives
+
+data/
+  README.md - explains where sample CSV input data lives
+
+tests/
+  README.md - explains where JUnit test files live
+
+docs/
+  README.md - supporting project documentation folder
+
+report/
+  README.md - reserved for the final report document
+
 src/main/java/riskstream/
   AccountPosition.java
   FlinkRiskJob.java
@@ -136,7 +163,7 @@ With a limit of `1000`, account `ACC1` reaches `1350.0` exposure after the GOOG 
 
 ```text
 CSV file
-  -> readTextFile
+  -> FileSource with TextLineInputFormat
   -> filter header/blank rows
   -> map CSV rows to TradeEvent objects
   -> keyBy account ID
