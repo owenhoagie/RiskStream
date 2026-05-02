@@ -1,12 +1,23 @@
 package riskstream;
+
+import java.io.Serializable;
+
 /**
  * Represents a trade event, including account, symbol, quantity, and price information.
  */
-public class TradeEvent {
+public class TradeEvent implements Serializable {
+    private static final long serialVersionUID = 1L;
+
     private String accountId;
     private String symbol;
     private int quantity;
     private double price;
+
+    /**
+     * Constructs an empty TradeEvent for frameworks that require a no-argument constructor.
+     */
+    public TradeEvent() {
+    }
 
     /**
      * Constructs a new TradeEvent.

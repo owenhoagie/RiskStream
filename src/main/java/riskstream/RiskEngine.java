@@ -1,11 +1,15 @@
 package riskstream;
 
+import java.io.Serializable;
 import java.util.Map;
 import java.util.HashMap;
+
 /**
  * The RiskEngine class processes trade events, manages account positions, and checks for risk breaches.
  */
-public class RiskEngine {
+public class RiskEngine implements Serializable {
+    private static final long serialVersionUID = 1L;
+
     private int maxExposure;
     private Map<String, AccountPosition> accountPositions;
     

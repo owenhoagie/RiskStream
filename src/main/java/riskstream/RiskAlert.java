@@ -1,14 +1,25 @@
 package riskstream;
+
+import java.io.Serializable;
+
 /**
  * Represents a risk alert, including alert type, message, and exposure details for an account and symbol.
  */
-public class RiskAlert {
+public class RiskAlert implements Serializable {
+    private static final long serialVersionUID = 1L;
+
     private String accountId;
     private String symbol;
     private String alertType;
     private String message;
     private double exposure;
     private double limit;
+
+    /**
+     * Constructs an empty RiskAlert for frameworks that require a no-argument constructor.
+     */
+    public RiskAlert() {
+    }
 
     /**
      * Constructs a new RiskAlert.

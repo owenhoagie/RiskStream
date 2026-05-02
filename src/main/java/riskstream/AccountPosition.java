@@ -1,8 +1,13 @@
 package riskstream;
+
+import java.io.Serializable;
+
 /**
  * Represents an account's position, including account ID and total exposure.
  */
-public class AccountPosition {
+public class AccountPosition implements Serializable {
+    private static final long serialVersionUID = 1L;
+
     private String accountId;
     private double totalExposure;
     
